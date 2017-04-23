@@ -6,14 +6,21 @@
      */
     function addValue(table, value) {
         var id,
+            keys,
             status = 0;
 
         // make sure we don't insert duplicate rows because the shitty ORM doesn't check for you
         if (getKeyOfValue(table, value) >= 0) {
             status = 1;
         } else {
+            keys = $.inidb.GetKeyList(table, '').map(Number);
+
+            // handle first add
+            if (!keys) {
+                keys.push(0);
+            }
             // get max key and add 1 since you need to provide a key for the stupid set procedure
-            id = Math.max.apply(null, $.inidb.GetKeyList(table, '').map(Number)) + 1;
+            id = Math.max.apply(null, keys) + 1;
             $.inidb.set(table, id, value);
 
             if (getKeyOfValue(table, value) == -1) {

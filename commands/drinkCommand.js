@@ -81,15 +81,15 @@
      * @event initReady
      */
     $.bind('initReady', function() {
-        $.registerChatCommand('./commands/drinkCommand.js', 'drink', 7);
-        $.registerChatCommand('./commands/drinkCommand.js', 'addgreeting', 7);
-        $.registerChatCommand('./commands/drinkCommand.js', 'addpreparation', 7);
-        $.registerChatCommand('./commands/drinkCommand.js', 'adddrink', 7);
-        $.registerChatCommand('./commands/drinkCommand.js', 'delgreeting', 7);
-        $.registerChatCommand('./commands/drinkCommand.js', 'delpreparation', 7);
-        $.registerChatCommand('./commands/drinkCommand.js', 'deldrink', 7);
-        $.registerChatCommand('./commands/drinkCommand.js', 'getgreetings', 7);
-        $.registerChatCommand('./commands/drinkCommand.js', 'getpreparations', 7);
-        $.registerChatCommand('./commands/drinkCommand.js', 'getdrinks', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'drink', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'addgreeting', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'addpreparation', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'adddrink', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'delgreeting', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'delpreparation', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'deldrink', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'getgreetings', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'getpreparations', 7);
+        $.registerChatCommand('./bortybot/commands/drinkCommand.js', 'getdrinks', 7);
     });
 })();

@@ -56,8 +56,8 @@
      * @event initReady
      */
     $.bind('initReady', function() {
-        $.registerChatCommand('./commands/factCommand.js', 'catfact', 7);
-        $.registerChatCommand('./commands/factCommand.js', 'addcatfact', 7);
-        $.registerChatCommand('./commands/factCommand.js', 'delcatfact', 7);
+        $.registerChatCommand('./bortybot/commands/factCommand.js', 'catfact', 7);
+        $.registerChatCommand('./bortybot/commands/factCommand.js', 'addcatfact', 7);
+        $.registerChatCommand('./bortybot/commands/factCommand.js', 'delcatfact', 7);
     });
 })();
